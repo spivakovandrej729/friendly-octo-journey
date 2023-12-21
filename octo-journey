@@ -1,0 +1,14 @@
+        newCollage.dependencies[index] = .init(pointIDs: ids)
+        
+        return newCollage
+    }
+    
+    private func disconnectControlPoints(_ ids: Set<String>,
+                                         in collage: Collage) -> Collage {
+guard let pointID = PointsRecognizer.findPoint(
+            point,
+            in: state.collage
+        )?.id else {
+            return state
+        }
+        
